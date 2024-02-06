@@ -1,0 +1,41 @@
+data
+    datasource
+        remote
+            Data Transfer Object (DTO)
+                Quote DTO
+            LukePaveyQuote API
+        Local
+            Favourites Room DAO
+            Favourites Room DB
+    Repository
+        Quotes Repository Implementation
+        Favourites Repository Implementation
+
+Domain
+    Model
+        Quote
+        Favourites Entity
+        Converters
+    Repository Interfaces
+        Quotes Repository
+        Favourites Repository
+    useCases
+        GetQuotes
+        GetTags
+        Search Quotes
+
+        Share Quotes
+
+        Favourite Quotes
+        UnFavouriteQuotes
+
+Presentation
+    Homepage
+        HomePageViewModel( QuotesUsecases, Favourite Usecases)
+        composables
+    SearchPage
+        SearchViewModel(QuotesUseCase, Favourite UseCases)
+        composables
+    Favourites
+        FavouritesViewModel(Favourite UseCases)
+        composables
